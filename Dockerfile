@@ -19,9 +19,9 @@ RUN docker-php-source extract \
     && pecl install -o -f redis \
     && docker-php-ext-configure pdo_mysql --with-pdo-mysql=mysqlnd \
     && docker-php-ext-configure mysqli --with-mysqli=mysqlnd \
-    && docker-php-ext-configure intl \
     && docker-php-ext-install mysqli \
     && docker-php-ext-install pdo_mysql \
+    && docker-php-ext-configure intl \
     && docker-php-ext-install intl \
     && docker-php-ext-enable redis \
     && docker-php-ext-enable intl \
