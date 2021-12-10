@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f649c82e-c3b2-4807-82c7-df94c70f73a9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/custom.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/custom.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/supervisord-main.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/supervisord-main.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/nginx/sources.list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/nginx/sury-php.list" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,11 +27,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="398d474b-335b-4e6b-ba92-b8c63fa653b5" />
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/config/supervisord-main.conf" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/config/supervisord.conf" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dockerfile" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/config/custom.ini" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/config/supervisord.conf" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/config/supervisord-main.conf" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JiraServerManager">
+    <servers />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -113,6 +118,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
