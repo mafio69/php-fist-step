@@ -21,12 +21,10 @@ RUN apt update && apt upgrade -y && apt install -y apt-utils \
     && docker-php-ext-configure sockets \
     && docker-php-ext-install mysqli \
     && docker-php-ext-install pdo_mysql \
-    && docker-php-ext-install sockets \
     && docker-php-ext-configure intl \
     && docker-php-ext-install intl \
     && docker-php-ext-enable redis \
     && docker-php-ext-enable intl \
-    && docker-php-ext-enable sockets \
     && docker-php-source delete \
     && rm -Rf /usr/local/etc/php/conf.d/xdebug.ini \
     && rm -f /etc/supervisor/supervisord.conf

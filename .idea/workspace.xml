@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="469bff38-1c5d-4829-b148-9988fe2f51a4" name="Changes" comment="test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/nginx/docker-php-ext-install" beforeDir="false" afterPath="$PROJECT_DIR$/config/nginx/docker-php-ext-install" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +18,13 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/config/nginx/enabled.conf" root0="FORCE_HIGHLIGHTING" />
@@ -45,9 +53,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.google.cloudcode.ide_session_index" value="20220201_0001" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config/nginx" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="MTHome" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config/nginx" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -64,7 +78,7 @@
       <workItem from="1644047815598" duration="507000" />
       <workItem from="1644212939172" duration="691000" />
       <workItem from="1644221069441" duration="92000" />
-      <workItem from="1644221185713" duration="599000" />
+      <workItem from="1644221185713" duration="3808000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1640090667942</created>
@@ -73,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640090667942</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test">
+      <created>1644222230600</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1644222230600</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
