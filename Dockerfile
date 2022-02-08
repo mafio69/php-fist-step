@@ -7,12 +7,17 @@ ENV DEBIAN_FRONTEND=noninteractive \
       XDEBUG_MODE=${XDEBUG_MODE:-off} \
       PHP_DATE_TIMEZONE=${PHP_DATE_TIMEZONE:-Europe/Warsaw}
 
+
+RUN apt-get update && apt-get install -y gnupg2 \
+    && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ABF5BD827BD9BF62
+# COPY config/sources.list /etc/apt/sources.list.d/nginx.list ----Unable to correct problems, you have held broken packages.
+
 RUN apt update && apt upgrade -y && apt install -y apt-utils \
     && apt install -y lsb-release ca-certificates apt-transport-https software-properties-common \
-    && apt install -y wget curl cron git unzip gnupg2 build-essential && apt install -y nginx \
+    && apt install -y wget curl cron git unzip gnupg2 build-essential \
     && apt install -y libicu-dev && apt-get install g++ && rm -rf /tmp/pear \
     && apt -y full-upgrade && apt -y autoremove && ln -s /var/log/nginx/ `2>&1 nginx -V | grep -oP "(?<=--prefix=)\S+"`/logs \
-    && apt-get update && apt-get install -y supervisor && mkdir -p /var/log/supervisor \
+    && apt-get update && apt-get install -y supervisor && mkdir -p /var/log/supervisor && apt-get -y install nginx \
     && docker-php-source extract \
     && pecl install xdebug \
     && pecl install -o -f redis \
@@ -27,7 +32,8 @@ RUN apt update && apt upgrade -y && apt install -y apt-utils \
     && docker-php-ext-enable intl \
     && docker-php-source delete \
     && rm -Rf /usr/local/etc/php/conf.d/xdebug.ini \
-    && rm -f /etc/supervisor/supervisord.conf
+    && rm -f /etc/supervisor/supervisord.conf \
+    && mkdir -p /usr/share/nginx/logs && touch /usr/share/nginx/logs/error.log
 
 WORKDIR /
 
