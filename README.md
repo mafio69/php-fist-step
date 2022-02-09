@@ -1,8 +1,8 @@
-### PHP 8.12, NGINX, DEBIAN 
+### PHP 8.12, NGINX, DEBIAN, DOCKER
 
 ## Maintained by: [Mafio](mf1969@gmail.com) 
 Source
-# https://github.com/docker-library/php
+### https://github.com/docker-library/php
 [the Docker Community](https://github.com/docker-library/php)
 
 This is the Git repo of the [Docker "Official Image"](https://github.com/docker-library/official-images#what-are-official-images) for [`php`](https://hub.docker.com/_/php/) (not to be confused with any official `php` image provided by `php` upstream).  
@@ -14,11 +14,11 @@ The [full image description on Docker Hub](https://hub.docker.com/_/php/) is gen
 
 ---
 
-# Note: All commands are executed in the directory where Dockerfile is located
+#### Note: All commands are executed in the directory where Dockerfile is located
 
 #### Linux
 
-1.[install docker ubuntu](https://docs.docker.com/compose/install)
+1.[install docker ubuntu](https://docs.docker.com/compose/install)  
 2.[install docker-compose ubuntu](https://docs.docker.com/compose/install)
 
 RUN
