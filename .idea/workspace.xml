@@ -7,7 +7,8 @@
     <list default="true" id="469bff38-1c5d-4829-b148-9988fe2f51a4" name="Changes" comment="README.md poprawki">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/supervisord-main.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/supervisord-main.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/custom.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/custom.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/php.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/php.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/supervisord.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/supervisord.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,10 +29,16 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/config/nginx/docker-php-ext-install" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/config/nginx/enabled-app.conf" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/config/sources.list" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/config/custom.ini" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/config/ssmtp.conf" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/config/php.ini" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/config/supervisord.conf" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/config/nginx/fastcgi.conf" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/config/supervisord-main.conf" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/config/nginx/enabled-symfony.conf" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/config/sysctl.conf" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dockerfile" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -183,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644393033540</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="README.md poprawki">
+      <created>1644394188167</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1644394188167</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

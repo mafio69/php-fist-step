@@ -41,6 +41,7 @@ RUN apt-get update && apt-get install -y gnupg2 \
     && docker-php-source delete \
     && rm -Rf /usr/local/etc/php/conf.d/xdebug.ini \
     && rm -f /etc/supervisor/supervisord.conf \
+    && rm -f /usr/local/etc/php/conf.d/docker-php-ext-zip.ini \
     && mkdir -p /usr/share/nginx/logs && touch /usr/share/nginx/logs/error.log
 
 RUN curl -fsSLO "$SUPERCRONIC_URL" \
