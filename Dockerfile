@@ -2,11 +2,11 @@ FROM php:fpm-buster
 MAINTAINER mf1969@gmail.com mafio
 
 ENV DEBIAN_FRONTEND=noninteractive \
-      APP_ENV=${APP_ENV:-prod} \
-      DISPLAY_ERROR=${DISPLAY_ERROR:-off} \
-      XDEBUG_MODE=${XDEBUG_MODE:-off} \
-      PHP_DATE_TIMEZONE=${PHP_DATE_TIMEZONE:-Europe/Warsaw} \
-  SUPERCRONIC_URL=https://github.com/aptible/supercronic/releases/download/v0.1.12/supercronic-linux-amd64 \
+    APP_ENV=${APP_ENV:-prod} \
+    DISPLAY_ERROR=${DISPLAY_ERROR:-off} \
+    XDEBUG_MODE=${XDEBUG_MODE:-off} \
+    PHP_DATE_TIMEZONE=${PHP_DATE_TIMEZONE:-Europe/Warsaw} \
+    SUPERCRONIC_URL=https://github.com/aptible/supercronic/releases/download/v0.1.12/supercronic-linux-amd64 \
     SUPERCRONIC=supercronic-linux-amd64 \
     SUPERCRONIC_SHA1SUM=048b95b48b708983effb2e5c935a1ef8483d9e3e
 
@@ -38,6 +38,7 @@ RUN apt update && apt upgrade -y && apt install -y apt-utils \
     && rm -Rf /usr/local/etc/php/conf.d/xdebug.ini \
     && rm -f /etc/supervisor/supervisord.conf \
     && mkdir -p /usr/share/nginx/logs && touch /usr/share/nginx/logs/error.log
+
 RUN curl -fsSLO "$SUPERCRONIC_URL" \
     && echo "${SUPERCRONIC_SHA1SUM}  ${SUPERCRONIC}" | sha1sum -c - \
     && chmod +x "$SUPERCRONIC" \
