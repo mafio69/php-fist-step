@@ -14,7 +14,7 @@ The [full image description on Docker Hub](https://hub.docker.com/_/php/) is gen
 
 ---
 
-# Note: All commands are executed in the directory where Dockerfile is located
+#### Note: All commands are executed in the directory where Dockerfile is located
 
 #### Linux
 
