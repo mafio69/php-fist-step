@@ -11,10 +11,8 @@ ENV DEBIAN_FRONTEND=noninteractive \
     SUPERCRONIC_SHA1SUM=048b95b48b708983effb2e5c935a1ef8483d9e3e
 
 RUN apt-get update && apt-get install -y gnupg2 \
-    && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ABF5BD827BD9BF62
-# COPY config/sources.list /etc/apt/sources.list.d/nginx.list ----Unable to correct problems, you have held broken packages.
-
-RUN apt update && apt upgrade -y && apt install -y apt-utils \
+    && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ABF5BD827BD9BF62 \
+    && apt update && apt upgrade -y && apt install -y apt-utils \
     && apt install -y lsb-release ca-certificates apt-transport-https software-properties-common \
     && apt install -y wget curl cron git unzip gnupg2 build-essential \
     && apt install -y libicu-dev && apt-get install g++ && rm -rf /tmp/pear \
@@ -51,6 +49,7 @@ RUN curl -fsSLO "$SUPERCRONIC_URL" \
     && cp composer.phar /usr/local/bin/composer  \
     && mv composer.phar /usr/bin/composer \
     && addgroup docker
+
 WORKDIR /
 
 COPY config/php.ini /usr/local/etc/php/php.ini

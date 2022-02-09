@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="469bff38-1c5d-4829-b148-9988fe2f51a4" name="Changes" comment="README.md poprawki">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +93,7 @@
       <workItem from="1644312004686" duration="989000" />
       <workItem from="1644333487431" duration="715000" />
       <workItem from="1644335732946" duration="1974000" />
-      <workItem from="1644387561490" duration="1185000" />
+      <workItem from="1644387561490" duration="2299000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1640090667942</created>
@@ -139,6 +138,7 @@
       <updated>1644391214787</updated>
     </task>
     <option name="localTasksCounter" value="7" />
+
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
