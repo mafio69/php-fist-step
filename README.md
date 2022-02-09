@@ -24,7 +24,8 @@ The [full image description on Docker Hub](https://hub.docker.com/_/php/) is gen
 RUN
   
 `docker build -t mafio69/php8:12 . && docker run -p 9898:8080 --name php812 mafio69/php8:12 `
-
+  
+***WEBROOT :*** `/main/public`
 #### He put together
 
 [mafio69](mailto:mf1969@gmail.com?subject=[GitHub]%20Docker%20Repo)
