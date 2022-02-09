@@ -2,13 +2,19 @@ FROM php:fpm-buster
 MAINTAINER mf1969@gmail.com mafio
 
 ENV DEBIAN_FRONTEND=noninteractive \
-    APP_ENV=${APP_ENV:-prod} \
-    DISPLAY_ERROR=${DISPLAY_ERROR:-off} \
-    XDEBUG_MODE=${XDEBUG_MODE:-off} \
     PHP_DATE_TIMEZONE=${PHP_DATE_TIMEZONE:-Europe/Warsaw} \
     SUPERCRONIC_URL=https://github.com/aptible/supercronic/releases/download/v0.1.12/supercronic-linux-amd64 \
     SUPERCRONIC=supercronic-linux-amd64 \
-    SUPERCRONIC_SHA1SUM=048b95b48b708983effb2e5c935a1ef8483d9e3e
+    SUPERCRONIC_SHA1SUM=048b95b48b708983effb2e5c935a1ef8483d9e3e \
+    XDEBUG_REMOTE_AUTOSTART=${XDEBUG_REMOTE_AUTOSTART:-1} \
+    XDEBUG_CLIENT_PORT=${XDEBUG_CLIENT_PORT:-9003} \
+    XDEBUG_CLIENT_HOST=${XDEBUG_CLIENT_HOST:-172.18.0.1} \
+    XDEBUG_MODE=${XDEBUG_MODE:-off} \
+    APP_DEBUG=${APP_DEBUG:-0} \
+    APP_ENV=${APP_ENV:-prod} \
+    DISPLAY_ERROR=${DISPLAY_ERROR:-off} \
+    # https://www.php.net/manual/en/timezones.php
+    PHP_DATE_TIMEZONE=${PHP_DATE_TIMEZONE:-Europe/Warsaw}
 
 RUN apt-get update && apt-get install -y gnupg2 \
     && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ABF5BD827BD9BF62 \
