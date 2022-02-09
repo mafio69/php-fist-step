@@ -1,7 +1,8 @@
-# https://github.com/docker-library/php
+### PHP 8.12, NGINX, DEBIAN 
 
 ## Maintained by: [Mafio](mf1969@gmail.com) 
 Source
+# https://github.com/docker-library/php
 [the Docker Community](https://github.com/docker-library/php)
 
 This is the Git repo of the [Docker "Official Image"](https://github.com/docker-library/official-images#what-are-official-images) for [`php`](https://hub.docker.com/_/php/) (not to be confused with any official `php` image provided by `php` upstream).  
