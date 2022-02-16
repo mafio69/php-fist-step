@@ -18,12 +18,12 @@ The [full image description on Docker Hub](https://hub.docker.com/_/php/) is gen
 
 #### Linux
 
-1.[install docker ubuntu](https://docs.docker.com/compose/install)
-2.[install docker-compose ubuntu](https://docs.docker.com/compose/install)
+1.[install docker ubuntu](https://docs.docker.com/compose/install)   
+2.[install docker-compose ubuntu](https://docs.docker.com/compose/install)  
 
 RUN
   
-`docker build -t mafio69/php8:12 . && docker run -p 9898:8080 --name php812 mafio69/php8:12 `
+`docker build -t mafio69/php8:12 . && docker run -p 9999:8080 --name php812 mafio69/php8:12`
 
 #### He put together
 

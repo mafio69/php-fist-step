@@ -1,14 +1,20 @@
-FROM php:fpm-buster
+FROM php:fpm-bullseye
 MAINTAINER mf1969@gmail.com mafio
 
 ENV DEBIAN_FRONTEND=noninteractive \
-    APP_ENV=${APP_ENV:-prod} \
-    DISPLAY_ERROR=${DISPLAY_ERROR:-off} \
-    XDEBUG_MODE=${XDEBUG_MODE:-off} \
     PHP_DATE_TIMEZONE=${PHP_DATE_TIMEZONE:-Europe/Warsaw} \
     SUPERCRONIC_URL=https://github.com/aptible/supercronic/releases/download/v0.1.12/supercronic-linux-amd64 \
     SUPERCRONIC=supercronic-linux-amd64 \
-    SUPERCRONIC_SHA1SUM=048b95b48b708983effb2e5c935a1ef8483d9e3e
+    SUPERCRONIC_SHA1SUM=048b95b48b708983effb2e5c935a1ef8483d9e3e \
+    XDEBUG_REMOTE_AUTOSTART=${XDEBUG_REMOTE_AUTOSTART:-1} \
+    XDEBUG_CLIENT_PORT=${XDEBUG_CLIENT_PORT:-9003} \
+    XDEBUG_CLIENT_HOST=${XDEBUG_CLIENT_HOST:-172.18.0.1} \
+    XDEBUG_MODE=${XDEBUG_MODE:-off} \
+    APP_DEBUG=${APP_DEBUG:-0} \
+    APP_ENV=${APP_ENV:-prod} \
+    DISPLAY_ERROR=${DISPLAY_ERROR:-off} \
+    # https://www.php.net/manual/en/timezones.php
+    PHP_DATE_TIMEZONE=${PHP_DATE_TIMEZONE:-Europe/Warsaw}
 
 RUN apt-get update && apt-get install -y gnupg2 \
     && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ABF5BD827BD9BF62 \
@@ -18,24 +24,27 @@ RUN apt-get update && apt-get install -y gnupg2 \
     && apt install -y libicu-dev && apt-get install g++ && rm -rf /tmp/pear \
     && apt -y full-upgrade && apt -y autoremove && ln -s /var/log/nginx/ `2>&1 nginx -V | grep -oP "(?<=--prefix=)\S+"`/logs \
     && apt-get update && apt-get install -y supervisor && mkdir -p /var/log/supervisor && apt-get -y install nginx \
+     && apt-get install -y libfreetype6-dev libjpeg62-turbo-dev libpng-dev \
     && apt-get install -y libzip-dev zip \
     && docker-php-source extract \
     && pecl install xdebug \
     && pecl install -o -f redis \
     && docker-php-ext-configure pdo_mysql --with-pdo-mysql=mysqlnd \
     && docker-php-ext-configure mysqli --with-mysqli=mysqlnd \
+    && docker-php-ext-configure gd  \
     && docker-php-ext-configure sockets \
     && docker-php-ext-install mysqli \
     && docker-php-ext-install pdo_mysql \
-    && docker-php-ext-install zip \
     && docker-php-ext-configure intl \
     && docker-php-ext-install intl \
+    && docker-php-ext-install zip \
     && docker-php-ext-enable redis \
+    && docker-php-ext-enable zip \
     && docker-php-ext-enable intl \
+    && docker-php-ext-install gd \
     && docker-php-source delete \
-    && rm -Rf /usr/local/etc/php/conf.d/xdebug.ini \
-    && rm -f /etc/supervisor/supervisord.conf \
-    && mkdir -p /usr/share/nginx/logs && touch /usr/share/nginx/logs/error.log
+    && mkdir -p /usr/share/nginx/logs && touch /usr/share/nginx/logs/error.log \
+    && apt-get install -y nodejs && apt install -y npm
 
 RUN curl -fsSLO "$SUPERCRONIC_URL" \
     && echo "${SUPERCRONIC_SHA1SUM}  ${SUPERCRONIC}" | sha1sum -c - \
@@ -48,7 +57,8 @@ RUN curl -fsSLO "$SUPERCRONIC_URL" \
     && mkdir -p /usr/share/nginx/logs/ \
     && cp composer.phar /usr/local/bin/composer  \
     && mv composer.phar /usr/bin/composer \
-    && addgroup docker
+    && addgroup docker \
+    && rm -Rf /etc/supervisor/supervisord.conf
 
 WORKDIR /
 

@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="469bff38-1c5d-4829-b148-9988fe2f51a4" name="Changes" comment="README.md poprawki">
+    <list default="true" id="6ee1cbaf-1245-468c-b405-d10729228168" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php-fist-step.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/custom.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/custom.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/php.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/php.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/supervisord.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/supervisord.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,130 +23,37 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="nginx-up" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/config/custom.ini" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/config/ssmtp.conf" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/config/supervisord.conf" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/config/supervisord-main.conf" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/config/sysctl.conf" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Dockerfile" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="22ayjAlaIAYgSAqxrVGkT2K7Ks9" />
+  <component name="ProjectId" id="25BstlYSEhaJ5ORrArLvKJLQLcC" />
   <component name="ProjectViewState">
     <option name="compactDirectories" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ACTIVE_CLOUD_PROJECT_ACCOUNT" value="mariusz.franciszczak@ccfound.com" />
-    <property name="ACTIVE_CLOUD_PROJECT_ID" value="ccfound-vpc-host-dev" />
-    <property name="ACTIVE_CLOUD_PROJECT_NAME" value="ccfound-vpc-host-dev" />
-    <property name="ACTIVE_CLOUD_PROJECT_NUMBER" value="379257633380" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220201_0001" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="MTHome" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/config/nginx" />
-      <recent name="$PROJECT_DIR$/config" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/config" />
-      <recent name="$PROJECT_DIR$/config/nginx" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Docker.Dockerfile create image">
-    <list>
-      <item itemvalue="Docker.Dockerfile create image" />
-      <item itemvalue="Docker.Docker Image" />
-    </list>
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="469bff38-1c5d-4829-b148-9988fe2f51a4" name="Changes" comment="" />
-      <created>1640090124175</created>
+      <changelist id="6ee1cbaf-1245-468c-b405-d10729228168" name="Changes" comment="" />
+      <created>1645012030226</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1640090124175</updated>
-      <workItem from="1640090125264" duration="607000" />
-      <workItem from="1643726226027" duration="801000" />
-      <workItem from="1643728095004" duration="657000" />
-      <workItem from="1643786519001" duration="599000" />
-      <workItem from="1644047815598" duration="507000" />
-      <workItem from="1644212939172" duration="691000" />
-      <workItem from="1644221069441" duration="92000" />
-      <workItem from="1644221185713" duration="4840000" />
-      <workItem from="1644228891188" duration="3531000" />
-      <workItem from="1644304239304" duration="1277000" />
-      <workItem from="1644312004686" duration="989000" />
-      <workItem from="1644333487431" duration="715000" />
-      <workItem from="1644335732946" duration="1974000" />
-      <workItem from="1644387561490" duration="2299000" />
+      <updated>1645012030226</updated>
+      <workItem from="1645012031266" duration="436000" />
+      <workItem from="1645015578234" duration="2082000" />
     </task>
-    <task id="LOCAL-00001" summary="test">
-      <created>1640090667942</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1640090667942</updated>
-    </task>
-    <task id="LOCAL-00002" summary="test">
-      <created>1644222230600</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1644222230600</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Final wersion 8,12">
-      <created>1644226330632</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1644226330632</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Final wersion 8,12">
-      <created>1644311236355</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1644311236355</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Final wersion 8,12">
-      <created>1644387651142</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1644387651142</updated>
-    </task>
-    <task id="LOCAL-00006" summary="README.md poprawki">
-      <created>1644391214787</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1644391214787</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
-
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,11 +69,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="test" />
-    <MESSAGE value="Final wersion 8,12" />
-    <MESSAGE value="README.md poprawki" />
-    <option name="LAST_COMMIT_MESSAGE" value="README.md poprawki" />
   </component>
 </project>
