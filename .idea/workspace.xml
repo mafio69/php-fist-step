@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="469bff38-1c5d-4829-b148-9988fe2f51a4" name="Changes" comment="Zip ext config">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Docker_Image.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Dockerfile_create_image.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/supervisord-main.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/supervisord-main.conf" afterDir="false" />
+    <list default="true" id="7033974f-fdd9-4275-b722-55ba3645c70b" name="Changes" comment="fix">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/custom.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/custom.ini" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,213 +20,61 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="nginx-up" />
-      </map>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
     </option>
+  </component>
+  <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/config/nginx/docker-php-ext-install" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/config/nginx/enabled-app.conf" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/config/sources.list" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/config/custom.ini" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/config/ssmtp.conf" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/config/php.ini" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/config/supervisord.conf" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/config/nginx/fastcgi.conf" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/config/supervisord-main.conf" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/config/nginx/enabled-symfony.conf" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/config/sysctl.conf" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Dockerfile" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="22ayjAlaIAYgSAqxrVGkT2K7Ks9" />
+  <component name="ProjectId" id="25F6j4sh5yeKHqwpNxv8FoFFFS6" />
   <component name="ProjectViewState">
     <option name="compactDirectories" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ACTIVE_CLOUD_PROJECT_ACCOUNT" value="mariusz.franciszczak@ccfound.com" />
-    <property name="ACTIVE_CLOUD_PROJECT_ID" value="ccfound-vpc-host-dev" />
-    <property name="ACTIVE_CLOUD_PROJECT_NAME" value="ccfound-vpc-host-dev" />
-    <property name="ACTIVE_CLOUD_PROJECT_NUMBER" value="379257633380" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20220201_0001" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="MTHome" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/config/nginx" />
-      <recent name="$PROJECT_DIR$/config" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/config" />
-      <recent name="$PROJECT_DIR$/config/nginx" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Docker.Dockerfile create image">
-    <list>
-      <item itemvalue="Docker.Dockerfile create image" />
-      <item itemvalue="Docker.Docker Image" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="469bff38-1c5d-4829-b148-9988fe2f51a4" name="Changes" comment="" />
-      <created>1640090124175</created>
+      <changelist id="7033974f-fdd9-4275-b722-55ba3645c70b" name="Changes" comment="" />
+      <created>1645110618876</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1640090124175</updated>
-      <workItem from="1640090125264" duration="607000" />
-      <workItem from="1643726226027" duration="801000" />
-      <workItem from="1643728095004" duration="657000" />
-      <workItem from="1643786519001" duration="599000" />
-      <workItem from="1644047815598" duration="507000" />
-      <workItem from="1644212939172" duration="691000" />
-      <workItem from="1644221069441" duration="92000" />
-      <workItem from="1644221185713" duration="4840000" />
-      <workItem from="1644228891188" duration="3531000" />
-      <workItem from="1644304239304" duration="1277000" />
-      <workItem from="1644312004686" duration="989000" />
-      <workItem from="1644333487431" duration="715000" />
-      <workItem from="1644335732946" duration="1974000" />
-      <workItem from="1644387561490" duration="1185000" />
+      <updated>1645110618876</updated>
+      <workItem from="1645110619911" duration="627000" />
+      <workItem from="1645371712369" duration="1236000" />
+      <workItem from="1645426478128" duration="746000" />
     </task>
-    <task id="LOCAL-00001" summary="test">
-      <created>1640090667942</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1640090667942</updated>
-    </task>
-    <task id="LOCAL-00002" summary="test">
-      <created>1644222230600</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1644222230600</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Final wersion 8,12">
-      <created>1644226330632</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1644226330632</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Final wersion 8,12">
-      <created>1644311236355</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1644311236355</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Final wersion 8,12">
-      <created>1644387651142</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1644387651142</updated>
-    </task>
-    <task id="LOCAL-00006" summary="README.md poprawki">
-      <created>1644391214787</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1644391214787</updated>
-    </task>
-    <task id="LOCAL-00007" summary="README.md poprawki">
-      <created>1644391390471</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1644391390471</updated>
-    </task>
-    <task id="LOCAL-00008" summary="README.md poprawki">
-      <created>1644391712801</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1644391712801</updated>
-    </task>
-    <task id="LOCAL-00009" summary="README.md poprawki">
-      <created>1644391800389</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1644391800390</updated>
-    </task>
-    <task id="LOCAL-00010" summary="README.md poprawki">
-      <created>1644391895702</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1644391895702</updated>
-    </task>
-    <task id="LOCAL-00011" summary="README.md poprawki">
-      <created>1644391966963</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1644391966963</updated>
-    </task>
-    <task id="LOCAL-00012" summary="README.md poprawki">
-      <created>1644393033540</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1644393033540</updated>
-    </task>
-    <task id="LOCAL-00013" summary="README.md poprawki">
-      <created>1644394188167</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1644394188167</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Zip ext config">
-      <created>1644398421451</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1644398421451</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test" />
-    <MESSAGE value="Final wersion 8,12" />
-    <MESSAGE value="README.md poprawki" />
-    <MESSAGE value="Zip ext config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zip ext config" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
