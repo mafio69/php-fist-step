@@ -1,5 +1,14 @@
 *Tested on ubuntu 20.04
-
+MICROSERVICE:  
+  PHP :   `Warning: Module "zip" is already loaded in Unknown on line 0  
+          PHP 8.1.2 (cli) (built: Jan 26 2022 16:40:42) (NTS)  
+          Copyright (c) The PHP Group  
+          Zend Engine v4.1.2, Copyright (c) Zend Technologies  
+          with Xdebug v3.1.3, Copyright (c) 2002-2022, by Derick Rethans`    
+  NGINX : `nginx version: nginx/1.14`    
+  MYSQL : `Ver 8.0.26`    
+  REDIS SERVER : `Redis server v=6.2.6 sha=00000000:0 malloc=jemalloc-5.1.0 bits=64 build=117005704b7d572d`  
+  MAIL TRAP : `mailhog/mailhog:v1.0.1`
 **For the application to work, it is necessary to run dockerfile or docker-compose**
 **To run on the system, docker and docker-compose must be installed**
 
